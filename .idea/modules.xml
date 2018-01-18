@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidTabLayout.iml" filepath="$PROJECT_DIR$/AndroidTabLayout.iml" />
+      <module fileurl="file://D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\android-tablayout-example\AndroidTabLayout.iml" filepath="D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\android-tablayout-example\AndroidTabLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/android-tablayout-example.iml" filepath="$PROJECT_DIR$/.idea/android-tablayout-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
