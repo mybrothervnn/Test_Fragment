@@ -19,7 +19,9 @@ public class Pager extends FragmentStatePagerAdapter {
         //Initializing tab count
         this.tabCount= tabCount;
     }
-
+    public void addTab(){
+        tabCount +=1;
+    }
     //Overriding method getItem
     @Override
     public Fragment getItem(int position) {

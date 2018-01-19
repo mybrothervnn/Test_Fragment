@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
 //    todo use FragmentStatePagerAdapter 4: Declare TabLayout and ViewPager
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    Pager adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         viewPager = (ViewPager) findViewById(R.id.pager);
 
 //    todo use FragmentStatePagerAdapter 7:Creating our pager adapter
-        Pager adapter = new Pager(getSupportFragmentManager(), tabLayout.getTabCount());
+        adapter = new Pager(getSupportFragmentManager(), tabLayout.getTabCount());
 
 //    todo use FragmentStatePagerAdapter 8:Adding adapter to pager
         viewPager.setAdapter(adapter);
@@ -87,11 +88,13 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
             case R.id.actionbar_item1:
                 tabLayout.addTab(tabLayout.newTab().setText("added tab OK"));
                 break;
-            case R.id.actionbar_item:
-                break;
             case R.id.actionbar_item2:
+                adapter.getItem(tabLayout.getTabCount()-1);
+                adapter.notifyDataSetChanged();
                 break;
             case R.id.actionbar_item3:
+                adapter.addTab();
+                adapter.notifyDataSetChanged();
                 break;
             case R.id.actionbar_item4:
                 break;

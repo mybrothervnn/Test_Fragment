@@ -7,16 +7,16 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/actionbar_item"
-        android:title="Badge Item 1"/>
+        android:title="tabLayout.removeTab(1)"/>
     <item
         android:id="@+id/actionbar_item1"
-        android:title="Badge Item 2" />
+        android:title="Add tab" />
     <item
         android:id="@+id/actionbar_item2"
-        android:title="Badge Item 3" />
+        android:title="Add view pager" />
     <item
         android:id="@+id/actionbar_item3"
-        android:title="Badge Item 4" />
+        android:title="addTab" />
     <item
         android:id="@+id/actionbar_item4"
         android:title="Badge Item 5" />
