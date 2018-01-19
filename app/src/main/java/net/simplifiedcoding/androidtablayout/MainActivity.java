@@ -12,11 +12,8 @@ import android.widget.Toast;
 //Implementing the interface OnTabSelectedListener to our MainActivity
 //This interface would help in swiping views
 public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener{
-
-    //This is our tablayout
+//    todo use FragmentStatePagerAdapter 4: Declare TabLayout and ViewPager
     private TabLayout tabLayout;
-
-    //This is our viewPager
     private ViewPager viewPager;
 
     @Override
@@ -28,26 +25,26 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Initializing the tablayout
+//    todo use FragmentStatePagerAdapter 5:Initializing the tablayout
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-
         //Adding the tabs using addTab() method
         tabLayout.addTab(tabLayout.newTab().setText("Tab1"));
         tabLayout.addTab(tabLayout.newTab().setText("Tab2"));
         tabLayout.addTab(tabLayout.newTab().setText("Tab3"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        //Initializing viewPager
+//    todo use FragmentStatePagerAdapter 6:Initializing viewPager
         viewPager = (ViewPager) findViewById(R.id.pager);
 
-        //Creating our pager adapter
+//    todo use FragmentStatePagerAdapter 7:Creating our pager adapter
         Pager adapter = new Pager(getSupportFragmentManager(), tabLayout.getTabCount());
 
-        //Adding adapter to pager
+//    todo use FragmentStatePagerAdapter 8:Adding adapter to pager
         viewPager.setAdapter(adapter);
 
-        //Adding onTabSelectedListener to swipe views
+//    todo use FragmentStatePagerAdapter 9:Adding onTabSelectedListener to swipe views
         tabLayout.setOnTabSelectedListener(this);
+//    todo use FragmentStatePagerAdapter 10:Adding addOnPageChangeListener to swipe Tab -> Pager.java
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         test();
     }
@@ -84,9 +81,11 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         int id = item.getItemId();
         switch (id){
             case R.id.actionbar_item0:
+//    todo use FragmentStatePagerAdapter 13_END: test remove tab.
                 tabLayout.removeTab(tabLayout.getTabAt(1));
                 break;
             case R.id.actionbar_item1:
+                tabLayout.addTab(tabLayout.newTab().setText("added tab OK"));
                 break;
             case R.id.actionbar_item:
                 break;

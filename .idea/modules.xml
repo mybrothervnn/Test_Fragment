@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\android-tablayout-example\AndroidTabLayout.iml" filepath="D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\android-tablayout-example\AndroidTabLayout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/android-tablayout-example.iml" filepath="$PROJECT_DIR$/.idea/android-tablayout-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Test_Fragment.iml" filepath="$PROJECT_DIR$/.idea/Test_Fragment.iml" />
+      <module fileurl="file://D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\Test_Fragment\Test_Fragment\.idea\android-tablayout-example.iml" filepath="D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\Test_Fragment\Test_Fragment\.idea\android-tablayout-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\Test_Fragment\Test_Fragment\app\app.iml" filepath="D:\ANDROID\PROJECT\ANDROID_STUDIO\GIT_EXAMPLE\Test_Fragment\Test_Fragment\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -11,7 +11,7 @@ import android.widget.TextView;
  * Created by Belal on 2/3/2016.
  */
 
-//Our class extending fragment
+//    todo use FragmentStatePagerAdapter 12:Our class extending fragment -> MainActivity.java
 public class Tab extends Fragment {
     int position;
     //Overriden method onCreateView

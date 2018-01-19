@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 /**
  * Created by Belal on 2/3/2016.
  */
-//Extending FragmentStatePagerAdapter
+//    todo use FragmentStatePagerAdapter 11:Extending FragmentStatePagerAdapter -> Tab.java
 public class Pager extends FragmentStatePagerAdapter {
 
     //integer to count number of tabs
